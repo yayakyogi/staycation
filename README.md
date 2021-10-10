@@ -1,1 +1,2 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+This is project website staycation build with Next.js using TypeScript
+[Learn Next.js](https://nextjs.org/learn).
