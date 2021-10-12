@@ -16,7 +16,7 @@ export default function Button(props) {
     }
     return (
       <span className={className.join(" ")} style={props.style}>
-        {porps.isLoading ? (
+        {props.isLoading ? (
           <>
             <span className="animate-spin h-5 w-5 mr-3"></span>
             <span className="text-sm">Loading...</span>
