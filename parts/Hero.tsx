@@ -12,8 +12,8 @@ export default function Hero(props) {
   return (
     <div className="container mx-auto block md:flex md:flex-row md:justify-around md:items-center hero-parent">
       {/* column left */}
-      <div className="hero px-3 md:px-0">
-        <h1 className="text-gray900 text-4xl poppins-bold mb-5 leading-tight md:leading-normal">
+      <div className="hero px-4 md:px-0">
+        <h1 className="text-gray900 text-5xl md:text-4xl poppins-bold mb-5 leading-tight md:leading-normal">
           Forget Busy Work,
           <br /> Start Next Vacation
         </h1>
