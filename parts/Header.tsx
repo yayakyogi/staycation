@@ -13,15 +13,15 @@ export default function Headers() {
     <div className="shadow bg-white">
       <div className="w-full px-2 md:container md:mx-auto md:px-16 flex flex-row py-3 justify-between items-center">
         <Link href="/">
-          <a className="text-xl text-blue md:text-2xl font-medium">
+          <a className="text-2xl md:text-3xl text-blue font-medium">
             Stay
-            <span className="text-xl text-gray900 md:text-2xl">cation.</span>
+            <span className="text-2xl md:text-3xl text-gray900">cation.</span>
           </a>
         </Link>
         <div
           className={`${
             IsOpen ? "block" : "hidden"
-          } flex flex-col absolute top-16 pb-4 pt-2 bg-gray100 shadow-sm w-full left-0 md:shadow-none md:bg-transparent md:top-0 md:relative md:flex md:flex-row md:justify-between md:items-center md:w-80 md:p-0`}
+          } flex flex-col absolute top-16 pb-4 pt-2 bg-white shadow-sm w-full left-0 md:shadow-none md:bg-transparent md:top-0 md:relative md:flex md:flex-row md:justify-between md:items-center md:w-80 md:p-0`}
         >
           <Link href="/">
             <a

@@ -82,9 +82,24 @@ h1 {
 .hero {
   width: 100%;
 }
+.card {
+  height: 98%;
+}
+.card::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 15;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));
+}
 @media screen and (min-width: 768px) {
   .hero-parent {
-    margin-top: 65px;
+    margin-top: 69px;
   }
   .hero {
     width: 500px;
