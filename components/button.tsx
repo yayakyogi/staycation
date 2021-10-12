@@ -72,4 +72,5 @@ Button.propTypes = {
   isDisabled: propTypes.bool,
   hasShadow: propTypes.bool,
   isEkternal: propTypes.bool,
+  children: propTypes.string,
 };
