@@ -45,3 +45,49 @@ h1 {
 .header-link {
   font-family: "Poppins-400";
 }
+.btn {
+  font-family: "Poppins-500";
+  font-size: 18px;
+}
+.poppins-thin {
+  font-family: "Poppin2-100";
+}
+.poppins-extraLight {
+  font-family: "Poppins-200";
+}
+.poppins-light {
+  font-family: "Poppins-300";
+}
+.poppins-regular {
+  font-family: "Poppins-400";
+}
+.poppins-medium {
+  font-family: "Poppins-500";
+}
+.poppins-semiBold {
+  font-family: "Poppins-600";
+}
+.poppins-bold {
+  font-family: "Poppins-700";
+}
+.poppins-extraBold {
+  font-family: "Poppins-800";
+}
+.poppins-black {
+  font-family: "Poppins-900";
+}
+.hero-parent {
+  margin-top: 20px;
+}
+.hero {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .hero-parent {
+    margin-top: 65px;
+  }
+  .hero {
+    width: 500px;
+    height: 500px;
+  }
+}

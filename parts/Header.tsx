@@ -11,7 +11,7 @@ export default function Headers() {
 
   return (
     <div className="shadow bg-white">
-      <div className="w-full px-2 md:container md:mx-auto md:px-8 flex flex-row py-4 justify-between items-center">
+      <div className="w-full px-2 md:container md:mx-auto md:px-16 flex flex-row py-3 justify-between items-center">
         <Link href="/">
           <a className="text-xl text-blue md:text-2xl font-medium">
             Stay
