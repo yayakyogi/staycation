@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
+import BrandIconText from "../components/brandIconText";
+import Button from "../components/button";
 
 export default function Headers() {
   const [IsOpen, setIsOpen] = useState(false);
@@ -12,53 +14,48 @@ export default function Headers() {
   return (
     <div className="shadow bg-white">
       <div className="w-full px-2 md:container md:mx-auto md:px-16 flex flex-row py-3 justify-between items-center">
-        <Link href="/">
-          <a className="text-2xl md:text-3xl text-blue font-medium">
-            Stay
-            <span className="text-2xl md:text-3xl text-gray900">cation.</span>
-          </a>
-        </Link>
+        <BrandIconText />
         <div
           className={`${
             IsOpen ? "block" : "hidden"
           } flex flex-col absolute top-16 pb-4 pt-2 bg-white shadow-sm w-full left-0 md:shadow-none md:bg-transparent md:top-0 md:relative md:flex md:flex-row md:justify-between md:items-center md:w-80 md:p-0`}
         >
-          <Link href="/">
-            <a
-              className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 md:p-0 header-link${getNavLinkClass(
-                "/"
-              )}`}
-            >
-              Home
-            </a>
-          </Link>
-          <Link href="/browseby">
-            <a
-              className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 header-link${getNavLinkClass(
-                "/browseby"
-              )}`}
-            >
-              Browse By
-            </a>
-          </Link>
-          <Link href="stories">
-            <a
-              className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 header-link${getNavLinkClass(
-                "/stories"
-              )}`}
-            >
-              Stories
-            </a>
-          </Link>
-          <Link href="agents">
-            <a
-              className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 header-link${getNavLinkClass(
-                "/agents"
-              )}`}
-            >
-              Agents
-            </a>
-          </Link>
+          <Button
+            type="link"
+            href="/"
+            className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 md:p-0 header-link${getNavLinkClass(
+              "/"
+            )}`}
+          >
+            Home
+          </Button>
+          <Button
+            type="link"
+            href="/browseby"
+            className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 md:p-0 header-link${getNavLinkClass(
+              "/browseby"
+            )}`}
+          >
+            Browse By
+          </Button>
+          <Button
+            type="link"
+            href="/stories"
+            className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 md:p-0 header-link${getNavLinkClass(
+              "/stories"
+            )}`}
+          >
+            Stories
+          </Button>
+          <Button
+            type="link"
+            href="/agents"
+            className={`font-normal text-sm md:text-base px-2 py-2 hover:text-gray600 md:p-0 header-link${getNavLinkClass(
+              "/agents"
+            )}`}
+          >
+            Agents
+          </Button>
         </div>
         <button
           id="humbergerbtn"
