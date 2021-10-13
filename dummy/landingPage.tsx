@@ -159,7 +159,7 @@ const landingPage = {
         {
           _id: "asd1293uasdads1",
           name: "Arya Duta",
-          imageUrl: "/images/img-categories-12.png",
+          imageUrl: "/images/img-categories-11.png",
           country: "South Korea",
           city: "Seoul Flore",
           isPopular: true,
