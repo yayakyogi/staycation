@@ -7,7 +7,7 @@ export default function MostPicked(props) {
   return (
     <div
       id="mostpicked"
-      className="container mx-auto mt-16 px-8 md:px-16 pb-20 pt-8 md:pt-0"
+      className="container mx-auto mt-12 px-8 md:px-16 pt-8 md:pt-0"
     >
       <h1 className="poppins-medium text-2xl text-gray900 mb-9">Most Picked</h1>
       <div className="grid grid-cols-4 md:grid-rows-4 grid-flow-row md:grid-flow-col gap-4">
