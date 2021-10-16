@@ -11,7 +11,7 @@ export default function LandingPage() {
   return (
     <>
       <Headers />
-      <Hero />
+      <Hero data={landingPage.hero} />
       <MostPicked data={landingPage.mostPicked} />
       <Categories data={landingPage.categories} />
       <Testimoni data={landingPage.testimonial} />
