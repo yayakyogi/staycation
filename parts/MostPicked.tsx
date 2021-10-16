@@ -21,7 +21,7 @@ export default function MostPicked(props) {
                   : "col-span-4 md:row-span-2"
               }`}
             >
-              <div className="rounded-2xl relative bg-gradient-to-t card">
+              <div className="rounded-2xl relative overflow-hidden card">
                 <div className="absolute z-10 right-0 bg-pink rounded-tr-2xl rounded-bl-2xl px-6 md:px-10 py-1 md:py-2">
                   <span className="text-sm md:text-base poppins-medium text-white">
                     ${items.price}{" "}
@@ -38,7 +38,7 @@ export default function MostPicked(props) {
                     height={`${index === 0 ? "458" : "220"}`}
                   />
                 </figure>
-                <div className="absolute bottom-4 left-4 z-20">
+                <div className="absolute bottom-4 left-4 z-20 button">
                   <Button
                     type="link"
                     href={`/properties/${items._id}`}
