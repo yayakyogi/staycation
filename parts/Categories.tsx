@@ -10,7 +10,7 @@ export default function Categories(props) {
       {props.data.map((item, index) => {
         return (
           <div key={`categories-${index}`} className="mb-6 md:mb-12">
-            <h1 className="poppins-medium text-2xl text-gray900 mb-9">
+            <h1 className="poppins-medium text-xl md:text-2xl text-gray900 mb-9">
               {item.name}
             </h1>
             <div
@@ -35,7 +35,7 @@ export default function Categories(props) {
                       height="180"
                       alt={items.name}
                     />
-                    <p className="text-xl poppins-regular mt-4 text-gray900 text-center md:text-left">
+                    <p className="text-lg md:text-xl poppins-regular mt-4 text-gray900 text-center md:text-left">
                       {items.name}
                     </p>
                     <p className="text-sm poppins-light text-gray500 text-center md:text-left">
