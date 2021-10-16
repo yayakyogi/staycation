@@ -33,32 +33,49 @@ export default function Hero(props) {
           {/* ic traveler */}
           <div className="mr-0 md:mr-8 w-20 md:w-full flex flex-col items-center md:items-start ">
             <div className="h-4 w-8">
-              <Image src={ICTranvelers} alt="ic_traveler" />
+              <Image
+                src={props.data.icTravelers}
+                width="32"
+                height="32"
+                alt="ic_traveler"
+              />
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              80,409{" "}
+              {props.data.travelers}{" "}
               <span className="text-gray500 poppins-light">travelers</span>
             </span>
           </div>
           {/* ic treasure */}
           <div className="mr-0 md:mr-8 w-20  md:w-full flex flex-col items-center md:items-start ">
             <div className="h-4 w-8">
-              <Image src={ICTreasures} alt="ic_treasure" />
+              <Image
+                src={props.data.icTreasures}
+                width="32"
+                height="32"
+                alt="ic_treasure"
+              />
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              862 <span className="text-gray500 poppins-light">treasure</span>
+              {props.data.treasures}{" "}
+              <span className="text-gray500 poppins-light">treasure</span>
             </span>
           </div>
           {/* ic cities */}
           <div className="mr-0 md:mr-8 w-20 md:w-full flex flex-col items-center md:items-start ">
             <div className="h-4 w-8">
-              <Image src={ICCities} alt="ic_cities" />
+              <Image
+                src={props.data.icCities}
+                width="32"
+                height="32"
+                alt="ic_cities"
+              />
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              1,492 <span className="text-gray500 poppins-light">cities</span>
+              {props.data.cities}{" "}
+              <span className="text-gray500 poppins-light">cities</span>
             </span>
           </div>
         </div>
