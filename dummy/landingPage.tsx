@@ -182,8 +182,8 @@ const landingPage = {
     rate: 4.55,
     content:
       "What a great trip with my family and I should try again next time soon ...",
-    familyName: "Angga",
-    familyOccupation: "Product Designer",
+    familyName: "Yayak",
+    familyOccupation: "Front End Developer",
   },
 };
 
