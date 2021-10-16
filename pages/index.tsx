@@ -6,7 +6,7 @@
 // export default function Home() {
 //   return <Headers />;
 // }
-import LandingPage from "./LandingPage";
+import LandingPage from "./landingpage";
 
 export default function App() {
   return <LandingPage />;
