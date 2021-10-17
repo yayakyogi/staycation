@@ -1,7 +1,7 @@
 import React from "react";
 
-import BrandIconText from "../components/brandIconText";
-import Button from "../components/button";
+import BrandIconText from "../components/BrandIcon/";
+import Button from "../components/Button";
 
 export default function Footer() {
   return (

@@ -100,6 +100,9 @@ h1 {
 .card figure:hover {
   transform: scale(1.05) !important;
 }
+.desc p {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 768px) {
   .hero-parent {
     margin-top: 69px;

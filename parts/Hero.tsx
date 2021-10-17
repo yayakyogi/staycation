@@ -1,10 +1,9 @@
 import Image from "next/image";
 import React from "react";
-import Button from "../components/button";
 
-const ICTranvelers = require("../public/images/ic_traveler.svg");
-const ICTreasures = require("../public/images/ic_treasure.svg");
-const ICCities = require("../public/images/ic_cities.svg");
+import Button from "../components/Button";
+import formatNumbering from "../utils/formatNumber";
+
 const ImgHero = require("../assets/images/img-hero.png");
 const _ImgHero = require("../assets/images/img-frame-home.png");
 
@@ -42,7 +41,7 @@ export default function Hero(props) {
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              {props.data.travelers}{" "}
+              {formatNumbering(props.data.travelers)}{" "}
               <span className="text-gray500 poppins-light">travelers</span>
             </span>
           </div>
@@ -58,7 +57,7 @@ export default function Hero(props) {
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              {props.data.treasures}{" "}
+              {formatNumbering(props.data.treasures)}{" "}
               <span className="text-gray500 poppins-light">treasure</span>
             </span>
           </div>
@@ -74,7 +73,7 @@ export default function Hero(props) {
             </div>
             <br />
             <span className="text-gray900 poppins-medium text-base text-center">
-              {props.data.cities}{" "}
+              {formatNumbering(props.data.cities)}{" "}
               <span className="text-gray500 poppins-light">cities</span>
             </span>
           </div>

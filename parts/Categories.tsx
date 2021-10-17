@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 
+import Button from "../components/Button";
+
 export default function Categories(props) {
   return (
     <div
@@ -19,7 +21,12 @@ export default function Categories(props) {
             >
               {item.items.map((items, index) => {
                 return (
-                  <div key={`items-${index}`} className="relative mb-6 md:mb-0">
+                  <Button
+                    key={`items-${index}`}
+                    type="link"
+                    href={`/properties/${items._id}`}
+                    className="relative mb-6 md:mb-0"
+                  >
                     <div
                       className={`${
                         items.isPopular ? "absolute" : "hidden"
@@ -41,7 +48,7 @@ export default function Categories(props) {
                     <p className="text-sm poppins-light text-gray500 text-center md:text-left">
                       {items.citry} {items.country}
                     </p>
-                  </div>
+                  </Button>
                 );
               })}
             </div>

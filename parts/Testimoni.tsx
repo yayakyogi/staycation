@@ -2,8 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
-import Star from "../components/star";
-import Button from "../components/button";
+import Star from "../components/Star";
+import Button from "../components/Button";
 
 const _ImgFrame = require("../assets/images/img-frame-home.png");
 const ic_star = require("../assets/icons/ic_star.svg");

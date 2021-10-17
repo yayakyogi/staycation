@@ -2,8 +2,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 
-import BrandIconText from "../components/brandIconText";
-import Button from "../components/button";
+import BrandIconText from "../components/BrandIcon";
+import Button from "../components/Button";
 
 export default function Headers() {
   const [IsOpen, setIsOpen] = useState(false);

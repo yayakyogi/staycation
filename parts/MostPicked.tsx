@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import Button from "../components/button";
+import Button from "../components/Button";
 
 export default function MostPicked(props) {
   return (
     <div
       id="mostpicked"
-      className="container mx-auto mt-12 px-8 md:px-16 pt-8 md:pt-0"
+      className="container mx-auto mt-12 px-4 md:px-16 pt-8 md:pt-0"
     >
       <h1 className="poppins-medium text-2xl text-gray900 mb-9">Most Picked</h1>
       <div className="grid grid-cols-4 md:grid-rows-4 grid-flow-row md:grid-flow-col gap-4">
@@ -42,7 +42,7 @@ export default function MostPicked(props) {
                   <Button
                     type="link"
                     href={`/properties/${items._id}`}
-                    className="text-xl poppins-regular text-white"
+                    className="text-xl poppins-regular text-white hover:underline"
                   >
                     {items.name}
                   </Button>
